@@ -1,0 +1,62 @@
+# examenPW1
+examen de la primera unidad programacion web
+Tecnologico Nacional de Mexico
+Instituto Tecnologico Tijuana
+Subdireccion Academica
+Departamento de Sistemas y Computacion
+Ing. Sistemas Computacionales
+Programacion WEB
+Profesor: Ray Brunett Parra Galaviz
+Alumno: Beltran MEdrano Hetor Alonso
+Matricula:15211885
+
+I. Instrucciones: Leer detalladamente los reactivos y responder de manera correcta lo solicitado en los
+reactivos
+1. Dibuje un arbol con la estructura basica de un proyecto y una aplicación de Django
+
+  demo
+   ├── aplicacion
+   │   ├── admin.py
+   │   ├── apps.py
+   │   ├── __init__.py
+   │   ├── migrations
+   │   ├── models.py
+   │   ├── tests.py
+   │   └── views.py
+   ├── manage.py
+   └── proyecto
+       ├── __init__.py
+       ├── __pycache__
+       ├── settings.py
+       ├── urls.py
+       └── wsgi.py
+2. Mencione tres argumentos que gestiona el comando manage.py
+python manage.py runserver
+python manage.py collecstatic
+python manage.py migrations
+
+3. Explique la diferencia de utilizar urls global y urls local
+En las urls globales accedes a las vistas desde con la url de la vista y pero antes una url de proyecto
+En las urls locales se accede a la vista directamente.
+
+4. Escriba un patron de url para una vista basada en funcion
+path('list_tweet/', views.list_tweet, name="list_tweet_view"),
+
+5. Escriba un patron de url para una vista basada en clase
+path('Create_Tweet/', views.Create_Tweet.as_view(), name="Create_Tweet_view"),
+
+6. Escriba el comando para hacer un proyecto en Django
+$django-admin startproject nombredemisitio
+
+7. Escriba el comando para hacer una aplicación en Django
+$ django-admin startapp nombredelaapp
+
+8. Mencione para que sirve el archivo Settings.py
+Describe la configuracion de su instalacion de django y le permite a django saber que configuraciones estan disponibles
+
+9. Escriba el comando para registrar las migraciones de los modelos
+python manage.py makemigrations
+
+
+10. Escriba el comando para sincronizar el modelo con el motor de base de datos.
+python manage.py migrate
